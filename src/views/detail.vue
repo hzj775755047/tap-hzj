@@ -46,9 +46,11 @@
                     <el-col :span="4" style="text-align: center;padding-top: 30px;height: 100px;">
                       <el-button type="success" style="width: 150px;">下 载</el-button>
                     </el-col>
+                    <el-col>
                     <div style="text-align: left;padding-left: 10px;padding-bottom: 10px;">
                         The first Soul Land open-world MMORPG, a classic IP with official authorization. -Preregister now to receive the Southeast Asia exclusive mount - Golden Cup Luo Sanpao,and get a chance to win generous physical prizes! -Explore the limitless
                       </div>
+                    </el-col>
                   </el-row>
                   <el-tabs v-model="activeName" type="border-card" style="text-align: center;">
                     <el-tab-pane label="热门" name="first">
