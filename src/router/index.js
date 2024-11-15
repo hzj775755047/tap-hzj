@@ -24,9 +24,9 @@ Vue.use(Router);
 
 // 公共路由
 export const constantRoutes = [
-
+  {path: '/', redirect: '/home'},
   {
-    path: "/",
+    path: "/home",
     name: "home",
     meta: { title: "首页", keepAlive: false },
     component: () =>

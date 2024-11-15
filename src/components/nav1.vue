@@ -35,7 +35,9 @@ export default {
   created(){
   },
   methods: {
-
+    toHome(){
+      this.$router.push("/home").catch(err => {err});
+    }
   }
 }
 </script>

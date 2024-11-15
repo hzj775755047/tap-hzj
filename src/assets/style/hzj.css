@@ -7,3 +7,73 @@
 .mt50{
     margin-top: 50px;
 }
+.el-tabs__nav-wrap .is-top{
+    padding-left: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    .el-tabs__nav-wrap .is-top{
+        padding-left: 30%;
+    }
+    .carousel{
+        height: 500px !important;
+    }
+    .lunboMobile{
+        display:block !important;
+    }
+    .lunboPaper{
+        display: none !important;
+    }
+    .mobileNav{
+        display: inline !important;
+        font-size: 16px !important;
+    }
+    .item-icon{
+        width: 15px;
+        margin-left: 10px;
+    }
+    .item-text{
+        font-size: 16px !important;
+    }
+    .search1{
+        width: 300px !important;
+        margin-left: 10px !important;
+        position: relative;
+        top: -15px;
+        padding-left: 0 !important;
+    }
+    .search{
+      width: 200px !important;
+      margin-left: 50px !important;
+      position: relative;
+      top: -15px;
+      padding-left: 0 !important;
+    }
+    .searchLogo{
+      display: none;
+    }
+    .login-img{
+      display: inline-block;
+      margin-left: 10px;
+      width: 40px !important;
+      margin-right: 20px !important;
+      cursor: pointer;
+      position: relative;
+      top: -15px;
+    }
+    .home{
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    .detail{
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    .icon-i{
+        width: 40px !important;
+        display: inline-block !important;
+    }
+    .imgi{
+        width: 80px !important;
+    }
+  }

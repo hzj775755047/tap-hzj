@@ -1,12 +1,14 @@
 <template>
   <div class="topBar">
       <!-- 搜索框 -->
+      
       <div class="search1" style="font-size: 22px;">
+        <el-button type="text" style="font-size: 22px; color: black;font-weight: bold;margin-left: 20px;" @click="toHome"><</el-button>
         详细信息
       </div>
       <!-- login -->
       <div class="login-img" >
-        <input class="search-input" v-model="searchStr" type="text" placeholder="搜索" />
+        <input class="search-input lunboPaper" v-model="searchStr" type="text" placeholder="搜索"  />
         <img  src="@/assets/img/index/default.png" alt="" class="searchImg">
       </div>
     </div>
@@ -31,7 +33,9 @@ export default {
   created(){
   },
   methods: {
-
+    toHome(){
+      this.$router.push("/home").catch(err => {err});
+    }
   }
 }
 </script>

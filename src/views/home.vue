@@ -10,8 +10,36 @@
           <div>
             精选游戏
             <el-card class="carousel" shadow="never">
-              <el-row :gutter="20">
-                <el-col :span="18">
+              <el-row :gutter="20"class="lunboPaper">
+                <el-col :span="18" >
+                  <img src="@/assets/img/application/application.jpg" alt="" class="carouselImg" @click="toDetail">
+                  <el-row class="carouseDesc">
+                    <el-row>
+                      <el-col :span="21" style="font-size: 26px;">Real-time combat RPG that intersects multiple worlds! Official launchtoday!</el-col>
+                      <el-col :span="2">
+                      <div style="font-size: 26px;">TapTap</div>
+                      <div style="font-size: 32px;padding-left: 10px;">9.2</div>
+                    </el-col>
+                    </el-row>
+                  </el-row>
+                </el-col>
+                <el-col :span="6" >
+                  <div v-for="o in 4" :key="o" class="text item">
+                    <el-row :gutter="20" class="imgBox">
+                      <el-col :span="10">
+                        <img src="@/assets/img/application/application.jpg" alt="" class="carouselRightImg" @click="toDetail">
+                      </el-col>
+                      <el-col :span="14">
+                        <div class="mt10 imgTitle">库比利亚</div>
+                        <div class="mt10 imgRank">9.3</div>
+                        <div class="mt10 imgTag">角色扮演</div>
+                      </el-col>
+                    </el-row>
+                  </div>
+                </el-col>
+              </el-row>
+              <el-row :gutter="20"class="lunboMobile" style="display: none;">
+                <el-col :span="24" >
                 <img src="@/assets/img/application/application.jpg" alt="" class="carouselImg" @click="toDetail">
                 <el-row class="carouseDesc">
                   <el-row>
@@ -23,29 +51,26 @@
                   </el-row>
                 </el-row>
               </el-col>
-              <el-col :span="6">
-                <div v-for="o in 4" :key="o" class="text item">
-                  <el-row :gutter="20" class="imgBox">
-                    <el-col :span="10">
-                      <img src="@/assets/img/application/application.jpg" alt="" class="carouselRightImg">
-                    </el-col>
-                    <el-col :span="14">
-                      <div class="mt10 imgTitle">库比利亚</div>
-                      <div class="mt10 imgRank">9.3</div>
-                      <div class="mt10 imgTag">角色扮演</div>
-                    </el-col>
-                  </el-row>
-                </div>
-              </el-col>
+              
               </el-row>
             </el-card>
           </div>
           <div>
             热门游戏和话题
-            <el-row :gutter="20">
+            <el-row :gutter="20" class="lunboPaper">
               <el-col :span="8" v-for="o in 10" :key="o" class="mt10">
                 <div>
-                  <img src="@/assets/img/application/application.jpg" alt="" class="imgList">
+                  <img src="@/assets/img/application/application.jpg" alt="" class="imgList" @click="toDetail">
+                </div>
+                  <div class="mt10 imgTitle">库比利亚</div>
+                      <div class="mt10 imgTag">角色扮演</div>
+                      <div class="mt10 imgDesc">本週最受「浪漫」遊戲玩家喜爱的遊戲</div>
+              </el-col>
+            </el-row>
+            <el-row :gutter="20" class="lunboMobile" style="display: none;">
+              <el-col :span="24" v-for="o in 10" :key="o" class="mt10">
+                <div>
+                  <img src="@/assets/img/application/application.jpg" alt="" class="imgList" @click="toDetail"> 
                 </div>
                   <div class="mt10 imgTitle">库比利亚</div>
                       <div class="mt10 imgTag">角色扮演</div>

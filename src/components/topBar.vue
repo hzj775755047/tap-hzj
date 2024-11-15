@@ -1,6 +1,9 @@
 <template>
   <div class="topBar">
       <!-- 搜索框 -->
+      <div @click="toHome" class="icon-i" style="display: none;">
+        <img src="@/assets/img/taptap.png" alt="" class="imgi">
+      </div>
       <div class="search">
         <img class="search-icon" src="@/assets/img/index/search.svg" alt="" >
         <input class="search-input" v-model="searchStr" type="text" placeholder="搜索" />
@@ -9,6 +12,18 @@
       <div class="login-img" >
         <img  src="@/assets/img/application/2222.png" alt="" class="searchLogo">
         <img  src="@/assets/img/index/default.png" alt="" class="searchImg">
+      </div>
+      <div>
+        <div class="mobileNav" style="display: none;">
+          <img class="item-icon" src="@/assets/img/tabbar/home.svg" alt="">
+          <!-- <img slot="item-icon-active" src="@/assets/img/tabbar/home_active.svg" alt=""> -->
+          <span class="item-text">游戏</span>
+        </div>
+        <div class="mobileNav"  style="display: none;">
+          <img class="item-icon" src="@/assets/img/tabbar/category.svg" alt="">
+          <!-- <img slot="item-icon-active" src="@/assets/img/tabbar/home_active.svg" alt=""> -->
+          <span class="item-text">设定</span>
+        </div>
       </div>
     </div>
 </template>
@@ -39,6 +54,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .topBar{
   position: fixed;
   width: 100%;
